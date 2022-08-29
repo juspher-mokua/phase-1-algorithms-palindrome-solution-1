@@ -1,10 +1,22 @@
+const { stringify } = require("mocha/lib/utils");
 function isPalindrome(word) {
   // Write your algorithm here
+  let reversedWord = word.split("").reverse().join("");
+
+  if (word === reversedWord){
+    return true;
+
+  } else {
+    return false;
+  }
 }
 
 /* 
   Add your pseudocode here
 */
+//  1.first reverse the string
+//  2.check whether the reversed string is equal to the     original word
+//  3.if true, then the word is a palidrome
 
 /*
   Add written explanation of your solution here
